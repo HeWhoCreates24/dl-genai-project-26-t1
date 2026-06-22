@@ -7,6 +7,7 @@ Roll: 24f2008463
 
 Folder Structure:
 
+```
 project-name/
 │
 ├── notebooks/
@@ -28,3 +29,4 @@ project-name/
 │
 ├── requirements.txt
 └── README.md
+```
