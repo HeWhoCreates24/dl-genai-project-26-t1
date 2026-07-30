@@ -8,9 +8,9 @@ import numpy as np
 from arch import SmartMCQSolverMLP
 
 def main():
-    test_data_path = 'dl-genai-project-26-t1/data/test.csv'
-    sample_sub_path = 'dl-genai-project-26-t1/data/sample_submission.csv'
-    model_dir = 'dl-genai-project-26-t1/models/mlp_scratch'
+    test_data_path = 'data/test.csv'
+    sample_sub_path = 'data/sample_submission.csv'
+    model_dir = 'models/mlp_scratch'
 
     # Load Data
     test_df = pd.read_csv(test_data_path)
@@ -53,7 +53,7 @@ def main():
             sample.loc[index, 'Prediction'] = " ".join(top_3_preds)
 
     # Save submission.csv
-    output_path = 'dl-genai-project-26-t1/models/mlp_scratch/submission_scratch.csv'
+    output_path = 'models/mlp_scratch/submission_scratch.csv'
     sample.to_csv(output_path, index=False)
     print(f"Saved {output_path} successfully!")
 

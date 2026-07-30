@@ -42,7 +42,7 @@ dl-genai-project-26-t1/
 │   ├── milestone-1.ipynb
 │   ├── milestone-2.ipynb
 │   :
-│   └── final_notebook.ipynb
+│   └── final-notebook.ipynb
 │
 ├── src/
 │   ├── train.py
@@ -50,5 +50,5 @@ dl-genai-project-26-t1/
 │   └── utils.py
 │
 ├── report.pdf
-└── README.md
 ├── requirements.txt
+└── README.md

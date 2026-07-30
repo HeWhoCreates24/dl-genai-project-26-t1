@@ -24,7 +24,7 @@ def main():
     # Data Preprocessing
     print("Preprocessing data...")
 
-    data_path = 'dl-genai-project-26-t1/data/train.csv'
+    data_path = 'data/train.csv'
     X_features, y_targets, vectorizer = preprocess_training_data(data_path, config.max_features)
 
     # Dataset & DataLoader
@@ -64,7 +64,7 @@ def main():
         print(f"Epoch {epoch+1}/{config.epochs} | Loss: {avg_loss:.4f} | Accuracy: {epoch_acc:.4f}")
 
     # Save Artifacts
-    save_dir = "dl-genai-project-26-t1/models/mlp_scratch"
+    save_dir = "models/mlp_scratch"
     os.makedirs(save_dir, exist_ok=True)
     
     torch.save(model.state_dict(), os.path.join(save_dir, "model.pt"))

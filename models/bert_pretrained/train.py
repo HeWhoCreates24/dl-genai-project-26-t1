@@ -15,7 +15,7 @@ def train_model(model_name, epochs, batch_size, lr, max_length):
     clean_name = model_name.split("/")[-1]
     
     print(f"Preparing training data for {model_name}...")
-    train_csv_path = 'dl-genai-project-26-t1/data/train.csv'
+    train_csv_path = 'data/train.csv'
     processed_df = prepare_transformer_data(train_csv_path)
 
     tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -64,7 +64,7 @@ def train_model(model_name, epochs, batch_size, lr, max_length):
         
         print(f"\n{clean_name} - Epoch {epoch+1} | Loss: {avg_loss:.4f} | Accuracy: {epoch_acc:.4f}")
 
-    save_dir = f"dl-genai-project-26-t1/models/saved/{clean_name}"
+    save_dir = f"models/saved/{clean_name}"
     os.makedirs(save_dir, exist_ok=True)
     
     torch.save(model.state_dict(), os.path.join(save_dir, "model.pt"))
