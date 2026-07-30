@@ -19,32 +19,36 @@ The pipeline evolves from traditional NLP statistical methods to state-of-the-ar
 - [x] **Milestone 1:** NLP Foundations & Semantic Similarity (TF-IDF, Cosine Similarity)
 - [x] **Milestone 2:** Transformers & Dense Context-Aware Embeddings (MiniLM, Zero-Shot Classification)
 - [x] **Milestone 3:** Context Augmentation with RAG Pipelines (FAISS, Bi-Encoders, Cross-Encoder Reranking)
-- [ ] **Milestone 4:** Formulating MCQ Tasks & LoRA Fine-Tuning 
-- [ ] **Milestone 5:** Ensembling & Final Deployment
+- [x] **Milestone 4:** Formulating MCQ Tasks & LoRA Fine-Tuning 
+- [x] **Milestone 5:** Ensembling & Final Deployment
 
 ---
 
 ## 📂 Repository Structure
 ```text
-project-name/
+dl-genai-project-26-t1/
+│
+├── data/
+│   ├── train.csv
+│   ├── test.csv
+│   └── sample_submission.csv
+│
+├── models/
+│   ├── model-1 (mlp_scratch)/
+│   ├── model-2 (bert_pretrained)/
+│   └── model-3 (electra-x-roberta_ensemble)/
 │
 ├── notebooks/
 │   ├── milestone-1.ipynb
 │   ├── milestone-2.ipynb
-│   ├── milestone-3.ipynb
+│   :
 │   └── final_notebook.ipynb
 │
 ├── src/
 │   ├── train.py
-│   ├── inference.py
+│   ├── infer.py
 │   └── utils.py
 │
-├── reports/
-│   ├── milestone-1-report.pdf
-│   ├── milestone-2-report.pdf
-│   └── final-report.pdf
-│
-├── models/
-│
-├── requirements.txt
+├── report.pdf
 └── README.md
+├── requirements.txt
