@@ -34,8 +34,7 @@ dl-genai-project-26-t1/
 │   └── sample_submission.csv
 │
 ├── deployment/
-│   ├── app.py
-│   └── deployed-model (roberta-base)/
+│   └── app.py
 │
 ├── models/
 │   ├── model-1 (mlp_scratch)/
