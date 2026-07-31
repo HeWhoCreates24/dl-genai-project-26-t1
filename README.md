@@ -45,9 +45,8 @@ dl-genai-project-26-t1/
 │   └── final-notebook.ipynb
 │
 ├── src/
-│   ├── train.py
 │   ├── infer.py
-│   └── utils.py
+│   └── submission.csv
 │
 ├── report.pdf
 ├── requirements.txt
